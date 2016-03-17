@@ -1,4 +1,10 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+
+group = 'hani.momanii.supernova_emoji_library' // Change this to match your package name
+version = '0.0.1' // Change this to match your version number
 
 android {
     compileSdkVersion 22
@@ -18,3 +24,54 @@ dependencies {
 
 }
 
+
+
+
+task generateSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier 'sources'
+}
+
+
+task generateJavadocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath()
+            .join(File.pathSeparator))
+}
+
+
+task generateJavadocsJar(type: Jar) {
+    from generateJavadocs.destinationDir
+    classifier 'javadoc'
+}
+generateJavadocsJar.dependsOn generateJavadocs
+
+
+
+artifacts {
+    archives generateJavadocsJar
+    archives generateSourcesJar
+}
+
+
+
+bintray {
+    user = 'hani-momanii'
+    key = 'b8ca3454fcbae6000023886040c20bad884ffac6'
+    pkg {
+        repo = 'maven'
+        name = 'SuperNova'
+
+        version {
+            name = 'SuperNovaEmojis'
+            desc = 'First Upload'
+            released  = new Date()
+            vcsTag = '0.0.1'
+        }
+
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/hani-momanii/SuperNova-Emoji.git'
+        websiteUrl = 'https://github.com/hani-momanii/SuperNova-Emoji'
+    }
+    configurations = ['archives']
+}
