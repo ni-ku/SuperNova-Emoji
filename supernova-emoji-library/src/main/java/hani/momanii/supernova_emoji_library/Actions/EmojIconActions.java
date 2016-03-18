@@ -42,6 +42,7 @@ public class EmojIconActions {
     EmojiconEditText emojiconEditText;
     int KeyBoardIcon= R.drawable.ic_action_keyboard;
     int SmileyIcons= R.drawable.smiley;
+    KeyboardListener keyboardListener;
 
 
     /**
@@ -120,11 +121,14 @@ public class EmojIconActions {
 
             @Override
             public void onKeyboardOpen(int keyBoardHeight) {
-
+                if (keyboardListener != null)
+                    keyboardListener.onKeyboardOpen();
             }
 
             @Override
             public void onKeyboardClose() {
+                if (keyboardListener != null)
+                    keyboardListener.onKeyboardClose();
                 if(popup.isShowing())
                     popup.dismiss();
             }
@@ -209,6 +213,17 @@ public class EmojIconActions {
 
     private void changeEmojiKeyboardIcon(ImageView iconToBeChanged, int drawableResourceId){
         iconToBeChanged.setImageResource(drawableResourceId);
+    }
+
+
+
+    public interface KeyboardListener{
+        void onKeyboardOpen();
+        void onKeyboardClose();
+    }
+
+    public void setKeyboardListener(KeyboardListener listener){
+        this.keyboardListener = listener;
     }
 
 }
