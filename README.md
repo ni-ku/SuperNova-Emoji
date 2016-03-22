@@ -1,7 +1,7 @@
 
 ## SuperNova-Emoji
 
-[SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement emojis.
+[SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement and render emojis.
 
 
 ## Java Usage
