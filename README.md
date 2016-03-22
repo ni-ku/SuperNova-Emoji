@@ -13,12 +13,16 @@ EmojIconActions  emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emo
 emojIcon.ShowEmojIcon();
 ```
 
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/Screenshot_20160322-173227.png)
+
+
 To use custom color :
 EmojIconActions(Context ctx,View rootView,EmojiconEditText emojiconEditText,ImageView emojiButton,String iconPressedColor,String tabsColor,String backgroundColor)
 ```
 EmojIconActions  emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emojiButton,"#495C66","#DCE1E2","#E6EBEF");
 emojIcon.ShowEmojIcon();
 ```
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/Screenshot_20160322-174209.png)
 
 
 
@@ -41,6 +45,7 @@ To use the device default emoji
 emojIcon.setUseSystemEmoji(true);
 emojiconEditText.setUseSystemEmoji(true);
 ```
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/Screenshot_20160322-173615.png)
 
 
 
@@ -62,7 +67,6 @@ emojiconEditText.setUseSystemEmoji(true);
 
 ```
 
-![image](https://github.com/rockerhieu/emojicon/raw/master/images/sample.jpg)
 
 
 ## Usage
