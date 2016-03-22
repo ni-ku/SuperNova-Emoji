@@ -1,11 +1,17 @@
-
+![emojicon on Maven Central](https://img.shields.io/badge/maven%20central-0.0.3-brightgreen.svg)
+![AppVeyor branch](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg)
 ## SuperNova-Emoji
-
 [SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement and render emojis.
 
 ![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/vid.gif)
 
 ## Contact
+
+
+[![alt text][1.1]][1]
+[![alt text][2.1]][2]
+[![alt text][6.1]][6]
+
 
 [1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
 [2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
