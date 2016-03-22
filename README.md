@@ -13,7 +13,7 @@ EmojIconActions  emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emo
 emojIcon.ShowEmojIcon();
 ```
 
-![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/Screenshot_20160322-173227.png)
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/ios.png)
 
 
 To use custom color :
@@ -45,7 +45,7 @@ To use the device default emoji
 emojIcon.setUseSystemEmoji(true);
 emojiconEditText.setUseSystemEmoji(true);
 ```
-![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/Screenshot_20160322-173615.png)
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/def.png)
 
 
 
