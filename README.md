@@ -1,12 +1,8 @@
-[![Android Gems](http://www.android-gems.com/badge/rockerhieu/emojicon.svg?branch=master)](http://www.android-gems.com/lib/rockerhieu/emojicon)
 
-![master on Travis CI](https://travis-ci.org/rockerhieu/emojicon.png?branch=master) ![emojicon on Maven Central](https://maven-badges.herokuapp.com/maven-central/com.rockerhieu.emojicon/library/badge.svg)
+## SuperNova-Emoji
 
-## Emojicon
+[SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement emojis.
 
-Do you like emojis in Whatsapp, iMessage? [Emojicon](http://rockerhieu.github.io/emojicon/) is a library to implement such a thing for Android.
-
-Fore more information please see [the website](http://rockerhieu.github.io/emojicon/)
 
 ## Java Usage
 
