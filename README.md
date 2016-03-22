@@ -22,7 +22,7 @@ EmojIconActions(Context ctx,View rootView,EmojiconEditText emojiconEditText,Imag
 EmojIconActions  emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emojiButton,"#495C66","#DCE1E2","#E6EBEF");
 emojIcon.ShowEmojIcon();
 ```
-![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/Screenshot_20160322-174209.png)
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/color.png)
 
 
 
