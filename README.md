@@ -3,6 +3,7 @@
 
 [SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement and render emojis.
 
+![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/vid.gif)
 
 ## Java Usage
 
