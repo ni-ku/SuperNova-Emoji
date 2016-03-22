@@ -5,6 +5,12 @@
 
 ![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/vid.gif)
 
+## Contact
+
+[1.1]: http://i.imgur.com/tXSoThF.png (twitter icon with padding)
+[2.1]: http://i.imgur.com/P3YfQoD.png (facebook icon with padding)
+[6.1]: http://i.imgur.com/0o48UoR.png (github icon with padding)
+
 ## Java Usage
 
 To use default colors : 
@@ -92,8 +98,6 @@ repositories {
 
 Based on Hieu Rocker's [library Emojicon Github](https://github.com/rockerhieu/emojicon/).
 
-Based on Ankushsachdeva  [library Emojicon Github](https://github.com/ankushsachdeva/emojicon/).
-
 Emojicon is using emojis graphics from [emoji-cheat-sheet.com](https://github.com/arvida/emoji-cheat-sheet.com/tree/master/public/graphics/emojis).
 
 ## License
@@ -115,3 +119,9 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+
+
+[1]: https://twitter.com/hani_momanii
+[2]: https://www.facebook.com/hani.momanii
+[6]: https://github.com/hani-momanii
