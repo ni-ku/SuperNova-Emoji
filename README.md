@@ -3,7 +3,7 @@
 ![AppVeyor branch](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg)
 ## SuperNova-Emoji
 [SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement and render emojis.
-
+Minimum SDK Level: 8 (2.2)
 ![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/vid.gif)
 
 ## Contact
