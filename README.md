@@ -1,6 +1,10 @@
+[![Android Gems](http://www.android-gems.com/badge/hani-momanii/SuperNova-Emoji.svg)
+
+
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SuperNova--Emoji-green.svg?style=true)](https://android-arsenal.com/details/1/3319)
 ![emojicon on Maven Central](https://img.shields.io/badge/maven%20central-0.0.3-brightgreen.svg)
 ![AppVeyor branch](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg)
+
 ## SuperNova-Emoji
 [SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement and render emojis.
 Minimum SDK Level: 8 (2.2)
