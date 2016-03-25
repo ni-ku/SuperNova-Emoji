@@ -1,4 +1,4 @@
-[![Android Gems](http://www.android-gems.com/badge/hani-momanii/SuperNova-Emoji.svg)
+![Android Gems](http://www.android-gems.com/badge/hani-momanii/SuperNova-Emoji.svg)
 
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SuperNova--Emoji-green.svg?style=true)](https://android-arsenal.com/details/1/3319)
