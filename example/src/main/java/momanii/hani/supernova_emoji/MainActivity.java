@@ -15,7 +15,7 @@ import hani.momanii.supernova_emoji_library.Helper.EmojiconTextView;
 public class MainActivity extends AppCompatActivity {
 
     CheckBox mCheckBox;
-    EmojiconEditText emojiconEditText;
+    EmojiconEditText emojiconEditText,emojiconEditText1;
     EmojiconTextView textView;
     ImageView emojiButton;
     ImageView submitButton;
@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
         submitButton = (ImageView) findViewById(R.id.submit_btn);
         mCheckBox = (CheckBox) findViewById(R.id.use_system_default);
         emojiconEditText = (EmojiconEditText) findViewById(R.id.emojicon_edit_text);
+        emojiconEditText1 = (EmojiconEditText) findViewById(R.id.emojicon_edit_text2);
         textView = (EmojiconTextView) findViewById(R.id.textView);
-        emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emojiButton);
-        emojIcon.ShowEmojIcon();
+        emojIcon=new EmojIconActions(this,rootView,emojiButton,emojiconEditText,emojiconEditText1);
+        emojIcon.ShowEmojicon();
         emojIcon.setKeyboardListener(new EmojIconActions.KeyboardListener() {
             @Override
             public void onKeyboardOpen() {
