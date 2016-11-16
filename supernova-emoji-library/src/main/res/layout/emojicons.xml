@@ -124,6 +124,7 @@
         android:layout_below="@id/emojis_tab"
         android:id="@+id/emojis_pager"
         android:background="#ffffff"
+        android:layoutDirection="locale"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true" />
