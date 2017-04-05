@@ -4,6 +4,10 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SuperNova--Emoji-green.svg?style=true)](https://android-arsenal.com/details/1/3319)
 ![emojicon on Maven Central](https://img.shields.io/badge/maven%20central-0.0.3-brightgreen.svg)
 ![AppVeyor branch](https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg)
+[![](https://jitpack.io/v/hani-momanii/SuperNova-Emoji.svg)](https://jitpack.io/#hani-momanii/SuperNova-Emoji)
+
+## [Release Notes](https://github.com/hani-momanii/SuperNova-Emoji/releases)
+ 
 
 ## SuperNova-Emoji
 
@@ -103,9 +107,9 @@ Via Gradle:
 ```
 
 repositories {
-    maven { url "https://dl.bintray.com/hani-momanii/maven"}
+    maven { url 'https://jitpack.io' }
 }
-  compile 'hani.momanii.supernova_emoji_library:supernova-emoji-library:0.0.2'
+compile 'com.github.hani-momanii:SuperNova-Emoji:1.1'
 ```
 
 ## Acknowledgements
