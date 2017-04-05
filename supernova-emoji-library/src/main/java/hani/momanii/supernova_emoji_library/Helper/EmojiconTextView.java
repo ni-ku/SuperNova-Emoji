@@ -60,7 +60,7 @@ public class EmojiconTextView extends TextView {
         } else {
             TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.Emojicon);
             mEmojiconSize = (int) a.getDimension(R.styleable.Emojicon_emojiconSize, getTextSize());
-            mEmojiconAlignment = a.getInt(R.styleable.Emojicon_emojiconAlignment, DynamicDrawableSpan.ALIGN_BASELINE);
+            mEmojiconAlignment = a.getInt(R.styleable.Emojicon_emojiconAlignment, DynamicDrawableSpan.ALIGN_BOTTOM);
             mTextStart = a.getInteger(R.styleable.Emojicon_emojiconTextStart, 0);
             mTextLength = a.getInteger(R.styleable.Emojicon_emojiconTextLength, -1);
             mUseSystemDefault = a.getBoolean(R.styleable.Emojicon_emojiconUseSystemDefault, mUseSystemDefault);

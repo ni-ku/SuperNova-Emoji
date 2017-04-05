@@ -1108,7 +1108,8 @@ public final class EmojiconHandler {
      * @param textSize
      * @param useSystemDefault
      */
-    public static void addEmojis(Context context, Spannable text, int emojiSize, int emojiAlignment, int textSize, boolean useSystemDefault) {
+    public static void addEmojis(Context context, Spannable text, int emojiSize, int emojiAlignment,
+                                 int textSize, boolean useSystemDefault) {
         addEmojis(context, text, emojiSize, emojiAlignment, textSize, 0, -1, useSystemDefault);
     }
 
@@ -1222,7 +1223,7 @@ public final class EmojiconHandler {
             }
 
             if (icon > 0) {
-                text.setSpan(new EmojiconSpan(context, icon, emojiSize), i, i + skip, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+                text.setSpan(new EmojiconSpan(context, icon, emojiSize, emojiAlignment, textSize), i, i + skip, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
         }
     }
