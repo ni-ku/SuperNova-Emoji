@@ -15,7 +15,7 @@ import hani.momanii.supernova_emoji_library.Helper.EmojiconTextView;
 public class MainActivity extends AppCompatActivity {
 
     CheckBox mCheckBox;
-    EmojiconEditText emojiconEditText;
+    EmojiconEditText emojiconEditText, emojiconEditText2;
     EmojiconTextView textView;
     ImageView emojiButton;
     ImageView submitButton;
@@ -32,18 +32,19 @@ public class MainActivity extends AppCompatActivity {
         submitButton = (ImageView) findViewById(R.id.submit_btn);
         mCheckBox = (CheckBox) findViewById(R.id.use_system_default);
         emojiconEditText = (EmojiconEditText) findViewById(R.id.emojicon_edit_text);
+        emojiconEditText2 = (EmojiconEditText) findViewById(R.id.emojicon_edit_text2);
         textView = (EmojiconTextView) findViewById(R.id.textView);
-        emojIcon=new EmojIconActions(this,rootView,emojiconEditText,emojiButton);
+        emojIcon = new EmojIconActions(this, rootView, emojiconEditText, emojiButton);
         emojIcon.ShowEmojIcon();
         emojIcon.setKeyboardListener(new EmojIconActions.KeyboardListener() {
             @Override
             public void onKeyboardOpen() {
-                Log.e("Keyboard","open");
+                Log.e("Keyboard", "open");
             }
 
             @Override
             public void onKeyboardClose() {
-                Log.e("Keyboard","close");
+                Log.e("Keyboard", "close");
             }
         });
 
@@ -54,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 textView.setUseSystemDefault(b);
             }
         });
-
+        emojIcon.addEmojiconEditTextList(emojiconEditText2);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,11 +65,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
-
 
 
 }
