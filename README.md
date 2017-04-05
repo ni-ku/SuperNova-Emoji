@@ -12,7 +12,7 @@
 ## SuperNova-Emoji
 
 [SuperNova-Emoji](https://github.com/hani-momanii/SuperNova-Emoji) is a library to implement and render emojis.
-Minimum SDK Level: 8 (2.2)
+Minimum SDK Level: 9 (2.3)
 
 
 ![image](https://github.com/hani-momanii/SuperNova-Emoji/blob/master/vid.gif)
