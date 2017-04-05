@@ -185,9 +185,9 @@ public class EmojIconActions {
                     else{
                         emojiconEditText.setFocusableInTouchMode(true);
                         emojiconEditText.requestFocus();
-                        popup.showAtBottomPending();
                         final InputMethodManager inputMethodManager = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
                         inputMethodManager.showSoftInput(emojiconEditText, InputMethodManager.SHOW_IMPLICIT);
+                        popup.showAtBottomPending();
                         changeEmojiKeyboardIcon(emojiButton,KeyBoardIcon);
                     }
                 }
