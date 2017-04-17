@@ -21,7 +21,9 @@ import android.text.Spannable;
 import android.util.SparseIntArray;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import hani.momanii.supernova_emoji_library.R;
 
@@ -37,6 +39,7 @@ public final class EmojiconHandler {
     private static final SparseIntArray sEmojisMap = new SparseIntArray(1029);
     private static final SparseIntArray sSoftbanksMap = new SparseIntArray(471);
     private static Map<String, Integer> sEmojisModifiedMap = new HashMap<>();
+    private static Set<String> sInexistentEmojis = new HashSet<>();
 
     static {
         // People
@@ -1205,10 +1208,12 @@ public final class EmojiconHandler {
                         int resourceId = 0;
                         if (sEmojisModifiedMap.containsKey(resourceName)) {
                             resourceId = sEmojisModifiedMap.get(resourceName);
-                        } else {
+                        } else if (!sInexistentEmojis.contains(resourceName)){
                             resourceId = context.getResources().getIdentifier(resourceName, "drawable", context.getApplicationContext().getPackageName());
                             if (resourceId != 0) {
                                 sEmojisModifiedMap.put(resourceName, resourceId);
+                            } else {
+                              sInexistentEmojis.add(resourceName);
                             }
                         }
 
