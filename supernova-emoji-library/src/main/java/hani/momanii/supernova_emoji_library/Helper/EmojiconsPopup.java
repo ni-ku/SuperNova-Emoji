@@ -273,7 +273,7 @@ public class EmojiconsPopup extends PopupWindow implements ViewPager.OnPageChang
 
                 //else, open the text keyboard first and immediately after that show the emoji popup
                 else{
-                    showAtBottomPending();
+                    // showAtBottomPending();
                     // changeEmojiKeyboardIcon(emojiButton, R.drawable.ic_action_keyboard);
                 }
             }
